@@ -3,7 +3,7 @@
 
 
 echo Starting Backend...
-cd /d "BackEnd"
+cd /d "AgriVisionProForum_BackEnd"
 start cmd /k "npm start"
 
 
@@ -12,7 +12,7 @@ start cmd /k "npm start"
 
 
 echo Starting Frontend...
-cd /d "..\FrontEnd"
+cd /d "..\AgriVisionProForum_FrontEnd"
 start cmd /k "npm start"
 
 echo All services started successfully.
