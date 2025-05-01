@@ -1,0 +1,55 @@
+{
+    "districts": [
+      {
+        "id": "63f9c84c519359b7438deaa7",
+        "name": "TIRUNELVELI",
+        "blocks": [
+          {
+            "id": "6492fcc2680216eb6c940b67",
+            "name": "AMBASAMUDRAM"
+          },
+          {
+            "id": "6492fcc2680216eb6c940b6b",
+            "name": "CHERANMAHADEVI"
+          },
+          {
+            "id": "6492fcc2680216eb6c940b73",
+            "name": "PALAYAMKOTTAI"
+          },
+          {
+            "id": "6492fcc2680216eb6c940b71",
+            "name": "NANGUNERI"
+          },
+          {
+            "id": "6492fcc2680216eb6c940b75",
+            "name": "VALLIYOOR"
+          },
+          {
+            "id": "6492fcc2680216eb6c940b77",
+            "name": "RADHAPURAM"
+          },
+          {
+            "id": "6492fcc2680216eb6c940b69",
+            "name": "PAPAKUDI"
+          }
+        ]
+      },
+      {
+        "id": "63f9cdb7519359b7438e692b",
+        "name": "TENKASI"
+      },
+      {
+        "id": "63f9c989519359b7438e084c",
+        "name": "TUTICORIN"
+      },
+      {
+        "id": "63f9c24d519359b7438d5fe5",
+        "name": "MADURAI"
+      },
+      {
+        "id": "63f9c154519359b7438d48e2",
+        "name": "KANYAKUMARI"
+      }
+    ]
+  }
+  
