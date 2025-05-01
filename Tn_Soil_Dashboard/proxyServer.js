@@ -30,7 +30,7 @@ app.post("/proxy/soildata", async (req, res) => {
 
 
 
-const GEMINI_API_KEY = "AIzaSyCNlY3qIQxbGc2vuSmGPZBFvrRgr8qbcIE";
+const GEMINI_API_KEY = "GEMINI_API_KEY";
 
 app.post("/api/chat", async (req, res) => {
   const userMessage = req.body.message;
