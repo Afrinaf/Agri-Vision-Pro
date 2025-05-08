@@ -1,144 +1,224 @@
+![Agrivision_Primary_Logo](https://github.com/user-attachments/assets/cdab885f-d131-45be-ba63-871e37b6ae31)
+
 # 🌾 Agri Vision Pro
 
-**Agri Vision Pro** is a full-stack AI-powered platform built to empower farmers with cutting-edge technologies in agriculture. It combines crop recommendation, disease detection, real-time environmental analysis, bidding systems (Inventory System), chatbot support, a farmer community forum, and mobile app integration — all under one roof.
+Agri Vision Pro is a full-stack AI-powered platform built to empower farmers with cutting-edge agricultural technologies. It combines:
 
-![AgriVision Pro Banner](![Agrivision_Primary_Logo](https://github.com/user-attachments/assets/553e0e9c-d0c6-461d-88b9-8ff5cad9e308)
-)
+- **Crop Recommendation**  
+- **Disease Detection**  
+- **Real-Time Environmental Analysis**  
+- **Inventory & Bidding System**  
+- **AI Chatbot Support**  
+- **Farmer Community Forum**  
+- **Mobile App Integration**  
+
+— all under one roof!
 
 ---
 
-## 🏷️ Badges
+## 🏷️ Tech & Tools
 
-
-[![Python](https://img.shields.io/badge/Python-3.10%2B-blue)](https://python.org)
-[![Node.js](https://img.shields.io/badge/Node.js-18%2B-success)](https://nodejs.org)
-[![MongoDB](https://img.shields.io/badge/-MongoDB-47A248?logo=mongodb&logoColor=white)](https://www.mongodb.com/)
-[![React](https://img.shields.io/badge/-React-61DAFB?logo=react&logoColor=white)](https://reactjs.org/)
-[![FastAPI](https://img.shields.io/badge/-FastAPI-009688?logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
-[![Expo](https://img.shields.io/badge/-Expo-000020?logo=expo&logoColor=white)](https://expo.dev/)
-[![Razorpay](https://img.shields.io/badge/-Razorpay-3A8BCD?logo=razorpay&logoColor=white)](https://razorpay.com/)
+![Python](https://img.shields.io/badge/Python-3670A0?logo=python&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-339933?logo=node.js&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?logo=react&logoColor=61DAFB)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?logo=mongodb&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-005571?logo=fastapi&logoColor=white)
+![Expo](https://img.shields.io/badge/Expo-1B1F23?logo=expo&logoColor=white)
+![Razorpay](https://img.shields.io/badge/Razorpay-4F1C75?logo=razorpay&logoColor=white)
 
 ---
 
 ## ✨ Features
 
-- 📊 **Real-Time Soil Analytics** – Tamil Nadu-specific soil health dashboard
-- 🧠 **AI-Powered Crop Recommendation** – Machine Learning for yield-based suggestions
-- 🦠 **Disease Detection** – Image-based plant disease identification
-- 🛒 **Inventory/Bidding System** – Farmers can buy/sell products via Razorpay wallet
-- 🤖 **Chatbot** – Gemini API-powered AI assistant for 24/7 query resolution
-- 💬 **Farmer Forum** – Connect, collaborate, and discuss agricultural practices
-- 📱 **Mobile App** – Android/iOS support for on-the-go access
-- 🔐 **Secure Authentication** – JWT-based login system
+| Icon | Feature                                               |
+|:---: |:----------------------------------------------------- |
+| 🧠   | **AI-Powered Crop Recommendation**<br>Yield-based suggestions using ML. |
+| 🦠   | **Disease Detection**<br>Image-based plant disease diagnostics.    |
+| ☁️   | **Real-Time Soil & Weather Data**<br>Tamil Nadu-specific analytics. |
+| 🛒   | **Inventory & Bidding System**<br>Buy/sell via Razorpay wallet.     |
+| 🤖   | **AI Chatbot**<br>Gemini API assistant for 24/7 support.            |
+| 💬   | **Farmer Forum**<br>Share blogs, tips & collaborate.                |
+| 📱   | **Mobile App**<br>Android/iOS support via Expo.                     |
+| 🔐   | **Secure Auth**<br>JWT-based login & session handling.             |
 
 ---
 
-## 🛠️ Full Tech Stack
+## 🚀 Quick Start
 
-**Frontend:**
-- React (with Redux or Context API)
-- Tailwind CSS / Material UI for styling
+### 1. Clone Repository
+```bash
+git clone https://github.com/Afrinaf/Agri-Vision-Pro.git
+cd Agri-Vision-Pro
+````
 
-**Backend/API:**
-- Node.js + Express (or Python with FastAPI)
-- RESTful APIs with JWT Authentication
-- Razorpay integration for payments
+### 2. Website Setup
 
-**Machine Learning:**
-- Python, TensorFlow/Keras, Scikit-Learn, Pandas
-- Crop prediction, disease detection, and trend analytics
-
-**Database:**
-- MongoDB for user data, inventory, and forum
-- Redis for real-time caching
-
-**Mobile:**
-- React Native (or Flutter)
-- Expo for Android/iOS deployment
-
----
-
-## 🚀 Quick Start Guide
-
-### 🌐 Web App Setup
+#### Tamil Nadu Soil Dashboard & Chatbot
 
 ```bash
-# Clone the repository
-git clone https://github.com/yourusername/AgriVision-Pro.git
-cd AgriVision-Pro
+cd Tn_Soil_Dashboard
+npm install
+node proxyServer.js
+```
 
-# Soil Dashboard & Chatbot
-cd Tn_Soil_Dashboard && npm install && node proxyServer.js
+#### Main Web Module
 
-# Main App
-cd frontend && npm install
-cd ../backend && npm install
-cd ../ML && pip install -r requirements.txt
+```bash
+cd frontend
+npm install
 
-# Forum
-cd ../Forum/BackEnd && npm install
-cd ../FrontEnd && npm install
+cd ../backend
+npm install
 
-# Inventory System
-cd ../InventorySystem_Backend && npm install
-cd ../InventorySystem_frontend && npm install
+cd ../ML
+pip install -r requirements.txt
+```
 
-# Run all modules (for Windows)
+#### Forum Module
+
+```bash
+cd AgriVisionProForum_BackEnd
+npm install
+
+cd ../AgriVisionProForum_FrontEnd
+npm install
+```
+
+#### Inventory System Module
+
+```bash
+cd InventorySystem_Backend
+npm install
+
+cd ../InventorySystem_frontend
+npm install
+```
+
+#### Environment Files
+
+Create `.env` files with your credentials:
+
+* **Frontend** (`frontend/.env`)
+
+  ```
+  VITE_API_URL=http://localhost:<PORT>/api/v1
+  VITE_API_KEY=<JWT_TOKEN>
+  ```
+* **Backend** (`backend/.env`)
+
+  ```
+  MONGO_URI=<YOUR_MONGO_URI>
+  PORT=<PORT>
+  JWT_SECRET=<YOUR_JWT_SECRET>
+  ML_URL=<ML_SERVICE_URL>
+  
+  ```
+
+* **Tn_Soil_Dashboard** (`proxyServer.js`)
+
+  ```
+  GEMINI_API_KEY=<YOUR_GEMINI_KEY>
+  ```
+
+* **Forum BackEnd** (`AgriVisionProForum_BackEnd/.env`)
+
+  ```
+  MONGO_URI=<YOUR_FORUM_DB_URI>
+  JWT_SECRET=<YOUR_FORUM_JWT_SECRET>
+  ```
+* **Inventory Backend** (fill in your Razorpay keys)
+
+  ```js
+  const razorpay = new Razorpay({
+    key_id: "YOUR_KEY_ID",
+    key_secret: "YOUR_KEY_SECRET"
+  });
+  ```
+
+### 3. Run All Modules (Windows)
+
+```bash
 ./run_AgriVisionPro.bat
 ./run_ForumModule.bat
 ./run_InventorySystem.bat
-🔗 Open your browser: http://localhost:5173
+```
 
-📱 Mobile App (Android/iOS)
+Open your browser at 👉 `http://localhost:5173/`
+
+---
+
+### 📱 Mobile App (Android/iOS)
+
+```bash
 cd android/frontend
 npx expo install
 npx expo start
-Then:
 
-Install Expo Go on your mobile
+cd ../../backend
+npm install
+npm start
 
-Scan the QR code from terminal
+cd ../ML
+pip install -r requirements.txt
+uvicorn app:app --reload
+```
 
-Enjoy real-time analytics on mobile!
+1. Install **Expo Go** on your device.
+2. Scan the QR code from terminal.
+3. Enjoy Agri Vision Pro on the move!
+
+---
 
 ## 📊 Dataset Sources
 
-| 🌿 **Feature**              | 🧾 **Description**                          | 📐 **Range**           |
-|----------------------------|---------------------------------------------|------------------------|
-| 🌧️ **Rainfall**            | Actual vs Normal rainfall (mm)              | 0 – 1200 mm            |
-| 🧪 **NPK Ratio**           | Soil Nutrient Levels (Nitrogen content)     | N: 0 – 140 kg/ha       |
-| 🌡️ **Temperature/Humidity** | Real-time microclimate sensor data         | 15°C – 45°C            |
+| 🌿 **Feature**               | 🧾 **Description**                      | 📐 **Range**     |
+| ---------------------------- | --------------------------------------- | ---------------- |
+| 🌧️ **Rainfall**             | Actual vs Normal rainfall (mm)          | 0 – 1200 mm      |
+| 🧪 **NPK Ratio**             | Soil Nutrient Levels (Nitrogen content) | N: 0 – 140 kg/ha |
+| 🌡️ **Temperature/Humidity** | Real-time microclimate sensor data      | 15°C – 45°C      |
+| 🌱 **Crop Patterns**         | Historical crop trends (2010–2023)      | Categorical      |
+
+**Primary Sources:**
+
+* India Meteorological Department (IMD)
+* Tamil Nadu Agricultural Department
+* Soil Health Card Program
+
+---
+
+## 🧩 System Architecture
+![Screenshot 2025-05-08 160042](https://github.com/user-attachments/assets/29445631-07a4-49ae-b448-272b7f04f171)
+
+
+---
+
+## 🖼️ Output Screenshot
+![photo-collage png (1)](https://github.com/user-attachments/assets/e9f62d43-292f-4d00-b605-9a407e3bb286)
 
 
 
-Primary Sources:
+---
 
-India Meteorological Department (IMD)
 
-Tamil Nadu Agricultural Department
 
-Soil Health Card Program
+## 🤝 Contribution
 
-🧩 System Architecture
-![major_project drawio](https://github.com/user-attachments/assets/579adce7-1f99-4558-b2b5-2c8567b57794)
+1. **Fork** the repo
+2. **Create** a feature branch (`git checkout -b feature/YourFeature`)
+3. **Commit** your changes (`git commit -m "Add feature"`)
+4. **Push** (`git push origin feature/YourFeature`)
+5. **Open** a Pull Request
 
-🤝 Contribution Guidelines
-bash
-Copy
-Edit
-# Fork the repository
-# Create a new feature branch
-git checkout -b feature/YourFeatureName
+---
 
-# Make your changes
-git commit -m "Add YourFeatureName"
+## 📜 License
 
-# Push to GitHub
-git push origin feature/YourFeatureName
+Distributed under the **MIT License**. See [`LICENSE`](LICENSE) for details.
 
-# Open a Pull Request
-📜 License
-Distributed under the MIT License
+---
+## 🌾 Cultivating Innovation, Harvesting Success
+Empowering Tamil Nadu farmers through data-driven agriculture 🚀
 
-🌾 Cultivating Innovation, Harvesting Success
-Empowering Tamil Nadu Farmers Through Data-Driven Agriculture 🚀
+---
+
+
