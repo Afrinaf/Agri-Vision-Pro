@@ -2,13 +2,14 @@
 
 **Agri Vision Pro** is a full-stack AI-powered platform built to empower farmers with cutting-edge technologies in agriculture. It combines crop recommendation, disease detection, real-time environmental analysis, bidding systems (Inventory System), chatbot support, a farmer community forum, and mobile app integration — all under one roof.
 
-![AgriVision Pro Banner](https://via.placeholder.com/1920x400.png?text=AgriVision+Pro+%7C+AI-powered+Farming+Solutions)
+![AgriVision Pro Banner](![Agrivision_Primary_Logo](https://github.com/user-attachments/assets/553e0e9c-d0c6-461d-88b9-8ff5cad9e308)
+)
 
 ---
 
 ## 🏷️ Badges
 
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue)](https://python.org)
 [![Node.js](https://img.shields.io/badge/Node.js-18%2B-success)](https://nodejs.org)
 [![MongoDB](https://img.shields.io/badge/-MongoDB-47A248?logo=mongodb&logoColor=white)](https://www.mongodb.com/)
